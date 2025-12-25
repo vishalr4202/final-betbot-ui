@@ -134,7 +134,7 @@ const Cricket = () => {
         borderColor = 'green';
       } else if (ele?.partial) {
         // one succeeded, one failed
-        borderColor = 'darkorange';
+        borderColor = 'orange';
       } else {
         // both failed #cb4343
         borderColor = 'red';
@@ -192,7 +192,7 @@ const Cricket = () => {
 
   
         {Array.isArray(ele?.failedAccounts) && ele.failedAccounts.length > 0 && (
-          <p style={{ color: 'orange', fontWeight: 'bold' }}>
+          <p style={{ color: 'chocolate', fontWeight: 'bold' }}>
             Failed account(s): {ele.failedAccounts.join(", ")}
           </p>
         )}
