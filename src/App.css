@@ -1,0 +1,76 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 20px;
+  border-radius: 10px;
+  flex:12%;
+  height:250px;
+  /* box-shadow:0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12) */
+box-shadow:0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12)
+}
+
+
+.betLayout{
+  display:flex;
+  margin:20px;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+}
+.unread{
+  /* color: rgba(255, 0, 0, 0.805); */
+  color: rgb(245, 152, 197)
+}
+.read{
+  /* color: rgba(0, 128, 0, 0.747) */
+  color:rgba(0, 0, 255, 0.599)
+}
+.card p{
+  margin:0px;
+  margin-bottom:3px;
+  font-size:14px;
+}
+.card h6{
+  font-size: 18px;
+}
+.card span{
+  font-size:20px;
+  font-weight:bold;
+}
+.read-the-docs {
+  color: #888;
+}
