@@ -4,6 +4,9 @@ import './App.css'
 import Homepage from './pages/Home/Home';
 import Cricket from './pages/cricket/cricket';
 import Casino from './pages/casino/casino';
+import GetPl from './pages/Graphs/Pl';
+import GetOdds from './pages/Graphs/odds';
+import CombinedChart from './pages/Graphs/combinedGraphs';
 function App() {
 
 
@@ -13,6 +16,11 @@ function App() {
       <Route path ='/' element={<Homepage />} />
       <Route path='/cricket' element={<Cricket />} />
       <Route path='/casino' element={<Casino />} />
+      <Route path='/graphs' element={<>
+      {/* <GetOdds />
+      <GetPl /> */}
+      <CombinedChart />
+      </>} />
       <Route path="*" element={<h1>not found</h1>} />
     </Routes>
       {/* for lotus betlist view */}
